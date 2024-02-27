@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+
+video {
+
+  object-fit: cover;
+
+  width: 100vw;
+
+  height: 100vh;
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  z-index: -1;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.position-fixed{
+  position:fixed;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  background-image: url('https://img.freepik.com/free-photo/top-view-beautiful-arrangement-of-green-foliage_23-2148327859.jpg?w=1060&t=st=1707146989~exp=1707147589~hmac=f357f31f36ae443699bdd4b606a3b9b38cc99c2dd73e4554856104b11e7bf113');
+  color:#FFFFFF;
+  background-size: cover;
+  width:100%;
+  height:22%;
+  opacity:0.9;
 }
 
-.App-link {
-  color: #61dafb;
+.search{
+font-size:20px;
+padding:10px 35px;
+background-color:transparent;
+color: #FFFFFF;
+box-shadow: inset 0px 0px 0px 4px #f2f2f5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.elements{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+margin-top: 12%;
+}
+
+.list{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+}
+
+li{
+  background-color: rgba(250, 235, 215, 0.532);
+  padding:10px;
+  margin:2px;
+  font-family: 'Playfair Display', serif;
+}
+
+h2,ul{
+  font-family: 'Playfair Display', serif;
+}
+
+.header{
+  font-size:43px;
+  font-family: 'Playfair Display', serif;
+}
+
+.btn-position{
+  display:flex;
+  flex-direction:row;
+  align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+.btn:hover{
+  background-color: darkseagreen;
+}
+
+.btn{
+  border:none;
+  width:50px;
+  height:47px;
+  border-radius: 5px;
+  margin:5px;
+}
+
+.calories{
+  background-color: rgb(146, 186, 143);
+  font-family: 'Playfair Display', serif;
+  padding:20px;
+}
+.App{
+  display:flex;
+flex-direction:column;
+justify-content: center;
+}
+
+
+
+@media all and (max-width:800px){
+
+  .App{
+  display:flex;
+  flex-direction: column;
   }
+
+  .position-fixed{
+    background-image: url('https://img.freepik.com/free-photo/fresh-green-baby-spinach-leaves-natural-background_169016-27568.jpg?size=626&ext=jpg&ga=GA1.1.573862193.1689753240&semt=sph');
+    color:#FFFFFF;
+    background-size: cover;
+    width:100%;
+    }
+    video {
+
+      object-fit:contain;
+    
+      width: 120vw;
+    
+      height: 80vh;
+    
+      position:fixed;
+    
+      top: 0;
+    
+      left: 0;
+    
+      z-index: -1;
+        }
+  body{
+    background-color: #FAE7C9;
+  }
+  .search{
+    padding:14px 35px;
+    }
+}
+
+
+@media all and (max-width:500px){
+  
+
+  .search{
+    padding:12px 25px;
+    }
+
+.recipe{
+  margin-top: 40%;
+  margin-left: 0;
+}
+video {
+
+  object-fit: cover;
+
+  width: 100vw;
+
+  height: 100vh;
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  z-index: -1;
+
+}
+
+.header{
+  font-size:37px;
+
+}
+
 }
